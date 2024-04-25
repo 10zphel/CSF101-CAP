@@ -70,7 +70,7 @@ def execute():
     It specifies the file path, fetches the game data, and computes the score.
     """
     # Specify the file path to the game data file
-    game_file = r"C:\Users\chimi\Downloads\input_5_cap1.txt"
+    game_file = r"input_5_cap1.txt"
     # Fetch the game rounds data from the file
     game_data = fetch_game_data(game_file)
     # If there is game data, compute and print the total score
@@ -78,6 +78,4 @@ def execute():
         print(f"Total Game Score: {compute_game_score(game_data)}")
 
 # Check if the script is run directly and not imported as a module
-if __name__ == "__main__":
-    # If the script is run directly, execute the main function
-    execute()
+execute()
